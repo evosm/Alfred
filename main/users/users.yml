@@ -1,0 +1,13 @@
+users:
+  user_for_new_reg:
+      cus: "B98608"
+      account_list:
+          rur: "123"
+      email: "test@test.ru"
+      phone: "79165337765"
+  user_test1:
+    cus: "AAAAA"
+    account_list:
+      rur: "000"
+    email: "test@test.ru"
+    phone: "00000000000"
