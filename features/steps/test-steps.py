@@ -1,12 +1,17 @@
 from behave import *
+from main import test, Users
+
 
 @given('we have behave installed')
 def step_impl(context):
     pass
 
-@when('we implement a test')
-def step_impl(context):
-    assert True is not False
+@when('Выбран клиент "{user_type}"')
+def step_impl(contex, user_type):
+    usr = Users.Users(user_type)
+    assert usr.get_user()
+
+
 
 @then('behave will test it for us!')
 def step_impl(context):
